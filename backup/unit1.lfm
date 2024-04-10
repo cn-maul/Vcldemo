@@ -1,0 +1,95 @@
+object Form1: TForm1
+  Left = 741
+  Height = 262
+  Top = 266
+  Width = 462
+  Caption = '工具集'
+  ClientHeight = 262
+  ClientWidth = 462
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 224
+    Top = 8
+    Width = 448
+    ActivePage = TabSheet2
+    TabIndex = 1
+    TabOrder = 0
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'Base64加解密'
+      ClientHeight = 194
+      ClientWidth = 440
+      object Memo1: TMemo
+        Left = 8
+        Height = 178
+        Top = 8
+        Width = 336
+        Lines.Strings = (
+          'Memo1'
+        )
+        TabOrder = 0
+      end
+      object Button1: TButton
+        Left = 352
+        Height = 25
+        Top = 40
+        Width = 75
+        Caption = '加密'
+        TabOrder = 1
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Left = 352
+        Height = 25
+        Top = 120
+        Width = 75
+        Caption = '解密'
+        TabOrder = 2
+        OnClick = Button2Click
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = '二维码生成'
+      ClientHeight = 194
+      ClientWidth = 440
+      object Image1: TImage
+        Left = 304
+        Height = 128
+        Top = 8
+        Width = 128
+        OnClick = Image1Click
+      end
+      object Memo2: TMemo
+        Left = 8
+        Height = 176
+        Top = 8
+        Width = 288
+        Lines.Strings = (
+          'Memo2'
+        )
+        TabOrder = 0
+      end
+      object Button3: TButton
+        Left = 304
+        Height = 25
+        Top = 159
+        Width = 131
+        Caption = '生成'
+        TabOrder = 1
+        OnClick = Button3Click
+      end
+    end
+  end
+  object Memo3: TMemo
+    Left = 8
+    Height = 26
+    Top = 232
+    Width = 448
+    Lines.Strings = (
+      'Memo3'
+    )
+    TabOrder = 1
+  end
+end
